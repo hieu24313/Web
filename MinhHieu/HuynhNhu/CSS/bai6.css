@@ -1,0 +1,27 @@
+body{
+    background-image: url(../IMG/bg.jpg);
+}
+table.main{
+    width: 80%;
+    margin: 0px auto;
+    background-color: white;
+}
+h1{
+    text-align: center;
+    color: #0a6fa3;
+}
+img.banner{
+    width: 100%;
+}
+ul {
+    list-style-type: none;
+}
+input.button{
+    width: 70px;
+    float: right;
+    margin-right: 10px;
+}
+table.foot{
+    width: 100%;
+    background-color: #0a6fa3;
+}
