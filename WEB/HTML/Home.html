@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- font  -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap');
+    </style>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="/CSS/Header.css">
+    <link rel="stylesheet" href="/CSS/Home.css">
+    <script src="/JS/Home.js"></script>
+    <title>MY WEB</title>
+
+    <script>
+        
+    </script>
+</head>
+<body onload="load_friends(); load_news(); load_btn();">
+    <div id="go">
+        <a href="javascript:;"><i class="fa-solid fa-chevron-up"></i></a>
+    </div>
+    <div class="flex">
+        <header class="h_header">
+            <nav class="flex menu">
+                <ul>
+                    <li>
+                        <div class="name">
+                            <a href="#">
+                                <img src="/IMG/Logo.png" alt="LOGO">
+                            </a>
+                        </div>
+                     </li>
+                    <li>
+                        <a href="/HTML/Home.html">
+                            <i class="fa-solid fa-house"></i> 
+                            <span>TRANG CHỦ</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/HTML/Discover.html">
+                            <i class="fa-regular fa-compass"></i>
+                            <span>KHÁM PHÁ</span>
+                        </a>
+                    </li>
+                    <li>
+                       <a href="/HTML/Mesenge.html">
+                            <i class="fa-regular fa-comment-dots"></i> 
+                            <span>TIN NHẮN</span>
+                       </a>
+                    </li>
+                    <li >
+                        <a href="#" class="notes">
+                            <i class="fa-regular fa-bell"></i> 
+                            <span>THÔNG BÁO</span>
+                            <ul class="note">
+                                <li><h3>Thông báo</h3></li>
+                                <li>Bạn chưa có thông báo mới</li>
+                            </ul>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa-regular fa-square-plus"></i> 
+                            <span>TẠO TIN</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+                
+        </header>
+    
+        <main class="h_main">
+            <div class="flex" style="margin-top: 10px;">
+                <section id="m-center">
+                    <div style="margin: 3%;">
+                        <div  class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="text" placeholder="Nhập thông tin cần tìm......" id="ip-search" >
+                        </div>
+                    </div>
+
+                    <div class="h-content">
+                        <div class="tab-story">
+                            <ul class="stories flex" id="stories">
+                                <li class="story">
+                                    <a href="#">
+                                        <div class="story-img">
+                                            <img src="/IMG/home/av1.jpg" alt="ảnh">
+                                        </div>
+                                        <div class="story-name">
+                                            <span>tt.Ah</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="story">
+                                    <a href="#">
+                                        <div class="story-img">
+                                            <img src="/IMG/home/av2.jpg" alt="ảnh">
+                                        </div>
+                                        <div class="story-name">
+                                            <span>nhu</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="story">
+                                    <a href="#">
+                                        <div class="story-img">
+                                            <img src="/IMG/home/av3.jpg" alt="ảnh">
+                                        </div>
+                                        <div class="story-name">
+                                            <span>hieu</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                
+                                <li class="story">
+                                    <a href="#">
+                                        <div class="story-img">
+                                            <img src="/IMG/home/av4.jpg" alt="ảnh">
+                                        </div>
+                                        <div class="story-name">
+                                            <span>tt.Ah</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="story">
+                                    <a href="#">
+                                        <div class="story-img">
+                                            <img src="/IMG/home/av5.jpg" alt="ảnh">
+                                        </div>
+                                        <div class="story-name">
+                                            <span>d.Hanh</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="story">
+                                    <a href="#">
+                                        <div class="story-img">
+                                            <img src="/IMG/home/av6.jpg" alt="ảnh">
+                                        </div>
+                                        <div class="story-name">
+                                            <span>tuan</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="story">
+                                    <a href="#">
+                                        <div class="story-img">
+                                            <img src="/IMG/home/av7.jpg" alt="ảnh">
+                                        </div>
+                                        <div class="story-name">
+                                            <span>vyvy</span>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li class="story">
+                                    <a href="#">
+                                        <div class="story-img">
+                                            <img src="/IMG/home/av8.jpg" alt="ảnh">
+                                        </div>
+                                        <div class="story-name">
+                                            <span>AnAn</span>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <button class="btn left" onclick="changeLeft()">
+                                <i class="fa-solid fa-circle-chevron-left" ></i>
+                            </button>
+                            <button class="btn right " onclick="changeRight()">
+                                <i class="fa-solid fa-circle-chevron-right" ></i>
+                            </button>
+                        </div>
+                    </div>
+                    <!-- load tin -->
+                    <div class="h-center" id="h-load-news">
+                       
+                    </div>
+                </section>
+                <div id="m-right">
+                    <!-- trang cá nhân  -->
+                    <div class="myProfile flex">
+                        <div class="myImg">
+                            <a href="/HTML/Profile.html">
+                                <img src="/IMG/avatar.jpg" alt="">
+                            </a>
+                        </div>  
+                        <div class="myName">
+                            <a href="/HTML/Profile.html">
+                                <div class="fname">
+                                    <h3>nhunhu</h3>
+                                </div>
+                                <div class="lname">
+                                    <h4>Huynh Nhu</h4>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Danh sách bạn bè load từ file json  -->
+                    <div class="friendss">
+                        <div class="online">
+                            <h3>Online</h3>
+                            <div>
+                                <div>
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </div>
+                                
+                                <input onchange="find_friends(this)" id="fname" type="text" placeholder="Nhập tên bạn bè......" >
+                            </div>
+                        </div>
+                        <div class="friends">
+                            <ul>
+                                <li class="friend1">
+                                    <div id="frie"> 
+
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+
+            
+
+        </main>
+    </div>
+  
+</body>
+</html>

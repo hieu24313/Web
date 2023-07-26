@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Jura', sans-serif;
+    color:navy;
+}
+/* go to top */
+#go{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: #57c6e1;
+    z-index: 999;
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    border: 2px solid white;
+}
+#go a{
+    text-decoration: none;
+}
+#go a i{
+    font-size: 40px;
+    text-align: center;
+    padding: 5px;
+}
+body{
+    /* margin: 0px 25px; */
+    padding: 0 20px;
+    background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%)
+    
+    /* background-image: linear-gradient(to right, #7085B6 0%, #87A7D9 50%, #DEF3F8 100%); */
+    /* background-image: linear-gradient(to right, #accbee 0%, #e7f0fd 100%) */
+    /* background-image: linear-gradient(to right, #a3bded 0%, #6991c7 100%); */
+    /* background-image: linear-gradient(60deg, #f3e7e9 0%, #e3eeff 99%, #e3eeff 100%); */
+}
+.flex {
+    display: flex;
+    /* flex-wrap: wrap; */
+}
+.h_header {
+    width: 17% ;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    border-right: 1px solid navy;
+}
+.header {
+    width: 7% !important;
+}
+/* sub-menu */
+nav.sub-menu {
+    width: 100% !important;
+}
+.sub-menu a{
+    text-decoration: none;
+    color: black;
+}
+
+/* menu */
+nav.menu{
+    width: 100%;
+    height: 100%;
+    /* margin-right: 10px; */
+    
+}
+nav.menu ul li:first-child{
+    margin-bottom: 80px;
+}
+nav.menu ul li{
+    list-style-type: none;
+    line-height: 4;
+
+}
+nav.menu ul li a{
+    font-size: 25px;
+    text-decoration: none;
+    color: black;
+}
+nav.menu ul li i{
+    font-size: 35px;
+    padding: 0px 20px;
+
+}
+
+/* logo */
+nav.menu .name{
+    width: 100%;
+    height: 150px;
+}
+.name .logo{
+    padding-top: 30%;
+}
+.name img{
+    width: 100%;
+}
+
+/* main */
+.h_main{
+    width: 100%;
+    margin-left: 18% ;
+}
+.main{
+    margin-left: 7% !important;
+}
+

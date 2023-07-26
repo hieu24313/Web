@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- <link rel="stylesheet" href="/CSS/Home.css"> -->
+    <title>Document</title>
+
+    <style>
+        .thumb {
+            width: 700px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .thumb div {
+            width: 10%;
+            margin: 10px;
+        }
+
+        .thumb div img {
+            width: 100%;
+        }
+
+        .box {
+            max-width: 200px;
+            max-height: 100px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            padding: 30px;
+        }
+
+        #btn-more {
+            padding: 30px;
+        }
+
+        .add {
+            /* max-height: none ; */
+            background-color: aqua;
+        }
+
+        button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-less {
+            display: none;
+        }
+
+        .friend {
+            position: relative;
+        }
+
+        .mini-mess {
+            width: 500px;
+            height: 300px;
+            background-color: aqua;
+            position: absolute;
+            right: 20px;
+            bottom: 0px;
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .mini-mess {
+            display: none;
+        }
+
+        .mini-mess>div>.img {
+            width: 15%;
+        }
+
+        .mini-img {
+            margin: 10px;
+            width: 100%;
+        }
+
+        .mini-img>img {
+            width: 100%;
+        }
+
+        .icon {
+            margin: 20px;
+        }
+
+        .icon>div>i {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body onload="load()">
+    <div class="item">
+        <img src="/IMG/profile/cat1.jpg" alt="" class="item1">
+        <div class="thumb">
+            <div><img src="/IMG/profile/cat2.jpg" alt=""></div>
+            <div><img src="/IMG/profile/cat3.jpg" alt=""></div>
+            <div><img src="/IMG/profile/cat4.jpg" alt=""></div>
+            <div><img src="/IMG/profile/cat5.jpg" alt=""></div>
+        </div>
+    </div>
+    <script>
+        var a = document.getElementsByName("item1")
+        a.onclick = function () {
+            alert('Bạn đã click vào thẻ này');
+        };
+        function init() {
+
+            // var a = document.querySelectorAll("div.thumb img")
+            // for(var i=0;i<a.length;i++)
+            //     a[i].onclick = function(){
+            //         alert("hello")
+
+            //     }
+        }
+    </script>
+
+
+    <div class="contents">
+        <div class="content">
+            <div class="box add">
+                <p>/𝗛𝗢𝗧 𝗦𝗘𝗥𝗩𝗜𝗖𝗘/ KHÁM THỊ LỰC MIỄN PHÍ CHUẨN Y TẾ TẠI ACROS NAY ĐÃ CÓ TẠI KHU VỰC HÀ NỘI 👌
+                    Không ngừng nổ lực mang đến cho Quý Khách Hàng một trải nghiệm chuyên nghiệp, khép kính từ tư vấn
+                    kính áp tròng phù hợp với nhu cầu, kích thước của mắt đến việc xác định độ đeo kính áp tròng chuẩn
+                    xác nhất, nên từ ngày 26/06/2022: Cả hai miền Bắc - Nam (HN - Showroom 𝟭𝟵𝟯 𝗕𝗮̀ 𝗧𝗿𝗶𝗲̣̂𝘂,𝗣.
+                    𝗟𝗲̂ Đ𝗮̣𝗶 𝗛𝗮̀𝗻𝗵, 𝗤. 𝗛𝗮𝗶 𝗕𝗮̀ 𝗧𝗿𝘂̛𝗻𝗴 và SG - Showroom 𝟳𝟭𝟰 𝗡𝗴𝘂𝘆𝗲̂̃𝗻 Đ𝗶̀𝗻𝗵
+                    𝗖𝗵𝗶𝗲̂̉𝘂, 𝗣.𝟭, 𝗤.𝟯 ) đều đã có thêm dịch vụ kiểm tra thị lực chuẩn y tế hoàn toàn miễn phí
+                    với 05 bước sau:
+                    🌟Bước 01: Nhỏ mắt bằng dung dịch chuyên dụng giúp mắt thư giãn và điều hoà thị lực về trạng thái
+                    cân bằng nhằm tăng hiệu quả đo đạt.
+                    🌟 Bước 02 : Đo kính gọng của Quý Khách đang dùng bằng máy đo điện tử để xác định khoảng độ cũ, phục
+                    vụ việc xác định khoảng độ mới dễ dàng và chính xác hơn.
+                    🌟Bước 03: Đo mắt bằng máy đo điện tử để xác định khoảng độ mới.
+                    🌟Bước 04: Chẩn đoán chính xác thị lực của mắt bằng kính mẫu.
+                    (*) Gắn miếng kính mẫu vào đeo thử, nếu nhìn rõ và thoải mái khi di duyển, thì độ kính đó thích hợp.
+                    Đây là bước quan trọng nhất không thể bỏ qua để cho ra kết quả chính xác và cuối cùng, đòi hỏi sự
+                    tận tâm và cẩn trọng của người thăm khám.
+                    🌟Bước 05: Thăm khám, tư vấn những vấn đề hoặc triệu chứng về mắt (nếu có).
+                    🔥Từ ngày hôm nay, mua sắm kính áp tròng tại Hà Nội cùng ACROS tiện lợi hơn bao giờ hết với Quy
+                    Trình Tư Vấn Khép Kín Chuyên Nghiệp. Đừng bỏ lỡ những lợi ích "không ngờ tới" khi tham gia sự kiện
+                    đo mắt miễn phí tại ACROS ngay hôm nay. Để phục vụ Quý Khách Hàng tốt hơn, xin vui lòng đặt lịch
+                    thăm khám bằng cách inbox trực tiếp qua fanpage hoặc qua hotline: 0931 409 791.
+                    _
+                    ACROS - Thương hiệu kính áp tròng theo tiêu chuẩn Mỹ:
+                    𝗦𝗶𝗹𝗶𝗰𝗼𝗻𝗲 𝗛𝘆𝗱𝗿𝗼𝗴𝗲𝗹: Giúp tăng độ thoải mái, kéo dài thời gian đeo lên đến cả ngày.
+                    𝗔𝗻𝘁𝗶𝗨𝗩: (chống tia UVA/UVB): Lớp phủ bóng chống tia UV giúp đôi mắt bạn thêm trong trẻo ánh
+                    tinh khôi.
+                    𝗡𝗮𝗻𝗼𝗔𝗻𝘁𝗶𝗫: Các phân tử nano kháng khuẩn, lớp bảo vệ mắt trước môi trường bụi bẩn.
+                </p>
+            </div>
+            <button class="btn-more">Xem thêm</button>
+            <button class="btn-less">Rút gọn</button>
+        </div>
+
+
+        <div class="content">
+            <div class="box add">
+                <p>/𝗛𝗢𝗧 𝗦𝗘𝗥𝗩𝗜𝗖𝗘/ KHÁM THỊ LỰC MIỄN PHÍ CHUẨN Y TẾ TẠI ACROS NAY ĐÃ CÓ TẠI KHU VỰC HÀ NỘI 👌
+                    Không ngừng nổ lực mang đến cho Quý Khách Hàng một trải nghiệm chuyên nghiệp, khép kính từ tư vấn
+                    kính áp tròng phù hợp với nhu cầu, kích thước của mắt đến việc xác định độ đeo kính áp tròng chuẩn
+                    xác nhất, nên từ ngày 26/06/2022: Cả hai miền Bắc - Nam (HN - Showroom 𝟭𝟵𝟯 𝗕𝗮̀ 𝗧𝗿𝗶𝗲̣̂𝘂,𝗣.
+                    𝗟𝗲̂ Đ𝗮̣𝗶 𝗛𝗮̀𝗻𝗵, 𝗤. 𝗛𝗮𝗶 𝗕𝗮̀ 𝗧𝗿𝘂̛𝗻𝗴 và SG - Showroom 𝟳𝟭𝟰 𝗡𝗴𝘂𝘆𝗲̂̃𝗻 Đ𝗶̀𝗻𝗵
+                    𝗖𝗵𝗶𝗲̂̉𝘂, 𝗣.𝟭, 𝗤.𝟯 ) đều đã có thêm dịch vụ kiểm tra thị lực chuẩn y tế hoàn toàn miễn phí
+                    với 05 bước sau:
+                    🌟Bước 01: Nhỏ mắt bằng dung dịch chuyên dụng giúp mắt thư giãn và điều hoà thị lực về trạng thái
+                    cân bằng nhằm tăng hiệu quả đo đạt.
+                    🌟 Bước 02 : Đo kính gọng của Quý Khách đang dùng bằng máy đo điện tử để xác định khoảng độ cũ, phục
+                    vụ việc xác định khoảng độ mới dễ dàng và chính xác hơn.
+                    🌟Bước 03: Đo mắt bằng máy đo điện tử để xác định khoảng độ mới.
+                    🌟Bước 04: Chẩn đoán chính xác thị lực của mắt bằng kính mẫu.
+                    (*) Gắn miếng kính mẫu vào đeo thử, nếu nhìn rõ và thoải mái khi di duyển, thì độ kính đó thích hợp.
+                    Đây là bước quan trọng nhất không thể bỏ qua để cho ra kết quả chính xác và cuối cùng, đòi hỏi sự
+                    tận tâm và cẩn trọng của người thăm khám.
+                    🌟Bước 05: Thăm khám, tư vấn những vấn đề hoặc triệu chứng về mắt (nếu có).
+                    🔥Từ ngày hôm nay, mua sắm kính áp tròng tại Hà Nội cùng ACROS tiện lợi hơn bao giờ hết với Quy
+                    Trình Tư Vấn Khép Kín Chuyên Nghiệp. Đừng bỏ lỡ những lợi ích "không ngờ tới" khi tham gia sự kiện
+                    đo mắt miễn phí tại ACROS ngay hôm nay. Để phục vụ Quý Khách Hàng tốt hơn, xin vui lòng đặt lịch
+                    thăm khám bằng cách inbox trực tiếp qua fanpage hoặc qua hotline: 0931 409 791.
+                    _
+                    ACROS - Thương hiệu kính áp tròng theo tiêu chuẩn Mỹ:
+                    𝗦𝗶𝗹𝗶𝗰𝗼𝗻𝗲 𝗛𝘆𝗱𝗿𝗼𝗴𝗲𝗹: Giúp tăng độ thoải mái, kéo dài thời gian đeo lên đến cả ngày.
+                    𝗔𝗻𝘁𝗶𝗨𝗩: (chống tia UVA/UVB): Lớp phủ bóng chống tia UV giúp đôi mắt bạn thêm trong trẻo ánh
+                    tinh khôi.
+                    𝗡𝗮𝗻𝗼𝗔𝗻𝘁𝗶𝗫: Các phân tử nano kháng khuẩn, lớp bảo vệ mắt trước môi trường bụi bẩn.
+                </p>
+            </div>
+            <button class="btn-more">Xem thêm</button>
+            <button class="btn-less">Rút gọn</button>
+        </div>
+
+    </div>
+
+    <div class="friend">
+        <a href="#" onclick="mini_mess(this)">
+            <div class="friend-img">
+                <img src="/IMG/dht.jpg" id="img-fr" alt="ảnh">
+            </div>
+            <div class="friend-name">
+                <span id="name-fr">nhu</span>
+            </div>
+        </a>
+        <div class="mini-mess">
+            <div class="flex">
+                <div class="img flex">
+                    <div class="mini-img">
+                        <img src="/IMG/dht.jpg" id="img-fr" alt="ảnh">
+                    </div>
+                    <div class="mini-name">
+                        <span id="name-fr">nhu</span>
+                    </div>
+                </div>
+                <div class="icon flex">
+                    <button class="minus" onclick="minus(this)"><i class="fa-solid fa-minus"></i></button>
+                    <button class="remove" onclick="remove(this)"><i class="fa-solid fa-xmark"></i></button>
+                </div>
+            </div>
+            <div class="infor">
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Nhập thông tin cần tìm......" id="ip-search">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        function mini_mess(obj) {
+            let mess = obj
+            let par = mess.parentNode
+            console.log(par)
+            let mini = par.querySelector(".mini-mess")
+            mini.style.display = "block"
+        }
+
+        function minus(obj) {
+            let m = obj
+            let par = m.parentNode.parentNode.parentNode
+            par.style.height = "90px"
+            let a = par.querySelector(".infor")
+            a.style.display = "none"
+        }
+
+        function remove(obj) {
+            let r = obj
+            let par = r.parentNode.parentNode.parentNode
+            //console.log(par)
+            par.style.display = "none"
+        }
+
+        function load() {
+            let btn = document.querySelectorAll(".btn-more")
+            console.log(btn)
+            for (let i = 0; i < btn.length; i++) {
+                let par = btn[i].parentNode
+                let child = par.querySelector(".box")
+                // console.log(child.scrollHeight)
+                if (child.scrollHeight >= 700)
+                    btn[i].style.display = "block"
+                else
+                    btn[i].style.display = "none"
+
+                //click vào button xem thêm        
+                btn[i].addEventListener("click", function () {
+                    //tìm phần class cha chứa tất cả
+                    let par = btn[i].parentNode
+                    let child = par.querySelector(".box")
+                    child.style.maxHeight = "none"
+                    btn[i].style.display = "none"
+
+                    //click vào button rút gọn
+                    let btnLess = par.querySelector(".btn-less")
+                    btnLess.style.display = "block"
+                    btnLess.addEventListener("click", function () {
+                        child.style.maxHeight = "100px"
+                        btnLess.style.display = "none"
+                        btn[i].style.display = "block"
+                    })
+                })
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

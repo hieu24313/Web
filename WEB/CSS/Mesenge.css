@@ -1,0 +1,204 @@
+/* #change a:hover {
+    background-color: aliceblue; 
+    animation: changeBG 5s 1; 
+    transition: animation 10s;
+} */
+@keyframes changeBG {
+    0% {
+        left: 0%;
+        /* background-color: aliceblue; */
+
+        background-color: antiquewhite;
+    }
+
+    50% {
+        left: 50%;
+        background-color: aliceblue;
+
+        /* background-color: red; */
+
+    }
+
+    100% {
+
+        left: 100%;
+        /* background-color: aliceblue; */
+
+        background-color: rgb(200, 137, 54);
+
+    }
+}
+
+.left {
+    width: 50%;
+    border-right: 1px solid gray;
+    padding: 15px 20px;
+
+}
+
+.myName {
+    height: 100px;
+}
+
+.myName div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.myName h1 {
+    font-size: 30px;
+}
+
+.myName h3 {
+    font-size: 30px;
+}
+
+.inform {
+    width: 50%;
+}
+
+.inform a {
+    text-decoration: none;
+    color: black;
+}
+
+.find {
+
+    width: 60%;
+    border: 1px solid black;
+    border-radius: 30px;
+    margin-left: auto;
+    padding-left: 10px;
+}
+
+.find i {
+    font-size: 20px;
+}
+
+#ip-find {
+    border: none;
+    margin-top: 8px;
+    font-size: 17px;
+    width: 90%;
+    background: none;
+}
+
+#ip-find:focus {
+    outline: none;
+}
+
+.friend {
+    margin-top: 30px;
+    height: 500px;
+}
+
+.friend ul {
+    list-style-type: none;
+}
+
+.friend ul li {
+    width: 100%;
+}
+
+.friend ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+
+.f-img {
+    width: 20%;
+    height: 100%;
+}
+
+.f-img img {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+}
+
+.f-name h3 {
+    /* text-align: center; */
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+/* right */
+.right {
+    padding: 15px 20px;
+    width: 90%;
+}
+
+.icon {
+    width: 60%;
+}
+
+.icon ul {
+    margin-left: 70%;
+    padding-top: 30px;
+}
+
+.icon ul li {
+    font-size: 30px;
+    list-style-type: none;
+    margin-right: 30px;
+}
+
+.icon ul li a {
+    color: black;
+
+}
+
+.mes-main {
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+
+}
+
+.mes-main i {
+    padding-top: 20px;
+    font-size: 30px;
+    color: black;
+}
+
+.mes-text {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    margin: 0px auto;
+    border: 1px solid black;
+    border-radius: 30px;
+
+}
+
+.mes-text input {
+    font-size: 20px;
+    padding: 15px 20px;
+    border: none;
+    width: 100%;
+    background: none;
+
+}
+
+.ip-text {
+    padding: 5px 20px;
+    width: 70%;
+    /* background:none; */
+}
+
+.ip-text input:focus {
+    outline: none;
+}
+
+.mes-icon {
+    width: 15%;
+    margin-left: 35%;
+}
+
+.mes-icon div {
+    width: 30%;
+    margin-right: 20px;
+}

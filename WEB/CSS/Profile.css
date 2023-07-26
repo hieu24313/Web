@@ -1,0 +1,194 @@
+/* <!-- ảnh đại diện - ảnh bìa --> */
+
+.content {
+    background-color: #f0f2f5;
+
+}
+
+.img-Profile {
+    width: 100%;
+    /* margin-bottom: 20px; */
+    background-color: #ffff;
+}
+
+.img-Profile div.img {
+    width: 80%;
+    margin: 0px auto;
+    height: 500px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.img-Profile div.img img {
+    width: 100%;
+    height: 100%;
+}
+
+.img-Profile div.name {
+    width: 75%;
+    margin: 0px auto;
+    justify-content: space-around;
+    /* background-color: azure; */
+}
+
+div.avatar {
+    width: 15%;
+    border-radius: 50%;
+    /* border: 3px solid white; */
+    /* margin-right: 20px; */
+}
+
+div.avatar img {
+    /* height: 300px; */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-top: -50px;
+}
+
+div.fname {
+    width: 20%;
+
+}
+
+.img-Profile h1 {
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+}
+
+.img-Profile span {
+    font-size: 1.5rem;
+}
+
+div.infor {
+    width: 50%;
+    justify-content: right;
+    margin-top: 40px;
+}
+
+div.infor div {
+    height: 30px;
+    border: 1px solid black;
+    margin-right: 20px;
+    padding: 7px;
+    text-align: center;
+    border-radius: 10px;
+    width: 40%;
+
+}
+
+div.infor div a {
+    text-decoration: none;
+}
+
+div.infor div.setting {
+    width: 10%;
+}
+
+/* <!-- <nội dung trang cá nhân -->  */
+.main-Profile {
+    width: 75%;
+    margin: 0px auto;
+}
+
+.menu-top ul {
+    width: 50%;
+    list-style-type: none;
+    justify-content: space-around;
+    margin: 0px auto;
+    font-size: 25px;
+}
+
+.menu-top ul li {
+
+    padding: 10px;
+    display: block;
+}
+
+.menu-top a {
+    text-decoration: none;
+}
+
+.menu-top ul li:first-child {
+    border-top: 5px solid gray;
+}
+
+.menu-top {
+    position: relative;
+}
+
+.items {
+    position: absolute;
+    top: 110%;
+    left: 0;
+    right: 0;
+    flex-wrap: wrap;
+}
+
+.item {
+    width: 24%;
+    height: 320px;
+    margin: 5px auto;
+    position: relative;
+}
+
+.item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+
+}
+
+.bg-top {
+    background-color: rgba(204, 239, 239, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    border-radius: 20px;
+
+}
+
+.bg-top>div {
+    margin: 40% 35%;
+}
+
+.bg-top>div>div {
+    padding-right: 10px;
+}
+
+.bg-top div i {
+    color: black;
+    font-size: 50px;
+    /* padding: 5px; */
+    cursor: pointer;
+    margin-top: 40%;
+}
+
+.item:hover .bg-top {
+    display: block;
+}
+
+.sub {
+    width: 100%;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    background-color: #f0f2f5;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+
+.sub .avatar {
+    width: 4%;
+    margin: 0 30px 0 12%;
+}
+
+.sub .avatar img {
+    width: 100%;
+    margin: 0;
+}
